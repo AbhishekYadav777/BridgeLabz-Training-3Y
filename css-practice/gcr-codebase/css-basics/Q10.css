@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Sticky navigation stays at the top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 7%;
+    background-color: rgba(20, 30, 45, 0.95);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero uses relative positioning */
+.hero {
+    position: relative;
+    height: 90vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://picsum.photos/1600/900");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid white;
+    outline: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin: 0 0 20px;
+}
+
+/* About uses flexbox */
+.about {
+    padding: 100px 8%;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    background-color: white;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about img {
+    width: 45%;
+    border-radius: 15px;
+    border: 5px solid #333;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+/* Services section */
+.services {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-container article {
+    flex: 1;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #1976d2;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact section */
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #eef2f7;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+}
+
+/* Fixed positioning */
+.top-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #141e2d;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}

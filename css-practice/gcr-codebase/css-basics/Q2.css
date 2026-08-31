@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    padding: 20px 8%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+main section {
+    min-height: 100vh;
+    padding: 15vh 10%;
+    margin: 0;
+    border-bottom: 5px solid white;
+}
+
+/* Linear gradient section */
+.gradient-section {
+    background: linear-gradient(135deg, #283c86, #45a247);
+    background-attachment: fixed;
+}
+
+/* Radial gradient section */
+.radial-section {
+    background: radial-gradient(circle, #ff9966, #ff5e62);
+    background-attachment: fixed;
+}
+
+.image-section {
+    background-image: url("https://picsum.photos/1600/900");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+section p {
+    max-width: 700px;
+    padding: 25px;
+    margin: 20px 0;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #111;
+    padding: 30px;
+    text-align: center;
+}

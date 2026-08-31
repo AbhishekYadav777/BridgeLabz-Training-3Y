@@ -1,0 +1,101 @@
+/* Reset default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page uses flexbox so footer stays at bottom */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7fb;
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed header remains visible while scrolling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 5%;
+    background-color: #172033;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+/* Main content needs top spacing because header is fixed */
+main {
+    flex: 1;
+    margin-top: 70px;
+}
+
+.hero {
+    min-height: 70vh;
+    padding: 10vh 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.hero div {
+    width: 55%;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.hero img {
+    width: 25%;
+    border-radius: 50%;
+    border: 5px solid #172033;
+}
+
+section:not(.hero) {
+    min-height: 30vh;
+    padding: 8vh 10%;
+}
+
+#about {
+    background-color: #dceeff;
+}
+
+#contact {
+    background-color: #cce8d5;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #172033;
+    color: white;
+}
