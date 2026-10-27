@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.selector-card {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+/* Element selector: selects every paragraph. */
+p {
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Class selector: selects elements with class="highlight". */
+.highlight {
+    padding: 10px;
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* ID selector: selects the element with this unique ID. */
+#unique-heading {
+    color: #7c3aed;
+}
+
+/* Attribute selector: selects links with target="_blank". */
+a[target="_blank"] {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Child combinator (>): selects direct child paragraphs only. */
+.parent > p {
+    background: #dbeafe;
+    padding: 8px;
+}
+
+/* Descendant combinator (space): selects nested paragraphs. */
+.parent p {
+    border-left: 3px solid #0d9488;
+    padding-left: 10px;
+}
+
+/* Adjacent sibling combinator (+): selects the next paragraph. */
+.adjacent + p {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* General sibling combinator (~): selects later paragraph siblings. */
+.adjacent ~ p {
+    background: #fef3c7;
+    padding: 6px;
+}
+
+/* Style the list for clean alignment. */
+li {
+    margin: 8px 0;
+}
+
+footer {
+    margin-top: 20px;
+}

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+    color: #1e293b;
+}
+
+.ui-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px #1e293b20;
+}
+
+header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+header p {
+    color: #64748b;
+}
+
+.component-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.component-form label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.component-form input,
+.component-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Highlight inputs when focused. */
+.component-form input:focus,
+.component-form select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb25;
+}
+
+/* Shared button styling. */
+.component-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+.secondary-button:hover {
+    background: #ddd6fe;
+    transform: translateY(-2px);
+}
+
+.component-form button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .ui-card {
+        padding: 20px;
+    }
+}

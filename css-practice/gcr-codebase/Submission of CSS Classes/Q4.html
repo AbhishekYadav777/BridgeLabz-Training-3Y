@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice</h1>
+        <p>Learn how different CSS selectors target HTML elements.</p>
+    </header>
+
+    <main>
+        <section class="selector-card">
+            <h2>1. Element Selector</h2>
+            <p>All paragraphs receive the element selector style.</p>
+            <p>This is another paragraph.</p>
+        </section>
+
+        <section class="selector-card">
+            <h2>2. Class Selector</h2>
+            <p class="highlight">This paragraph uses a class selector.</p>
+        </section>
+
+        <section class="selector-card">
+            <h2 id="unique-heading">3. ID Selector</h2>
+            <p>The heading above uses a unique ID.</p>
+        </section>
+
+        <section class="selector-card">
+            <h2>4. Attribute Selector</h2>
+            <a href="https://example.com" target="_blank">
+                Example link with target attribute
+            </a>
+        </section>
+
+        <section class="selector-card combinator-demo">
+            <h2>5. Combinators</h2>
+
+            <div class="parent">
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Descendant paragraph</p>
+                </div>
+            </div>
+
+            <p class="adjacent">Paragraph used for the adjacent selector.</p>
+            <p>Paragraph immediately after the adjacent paragraph.</p>
+            <p>Another paragraph selected by the general sibling selector.</p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Selectors Practical</p>
+    </footer>
+</body>
+</html>

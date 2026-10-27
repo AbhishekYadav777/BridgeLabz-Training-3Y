@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.effects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.effect-card {
+    width: 260px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px #00000012;
+}
+
+.effect-button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+    /* Smoothly animate color, size, position, and shadow. */
+    transition: background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Combine hover, transformation, and shadow. */
+.hover-effect:hover {
+    background: #7c3aed;
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px #7c3aed40;
+}
+
+/* Change appearance while the button is pressed. */
+.active-effect:active {
+    background: #047857;
+    transform: scale(0.94);
+    box-shadow: 0 2px 5px #00000025;
+}
+
+/* Highlight keyboard focus. */
+.focus-effect:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 5px;
+    background: #0f766e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px #00000020;
+}
+
+footer {
+    margin-top: 20px;
+}

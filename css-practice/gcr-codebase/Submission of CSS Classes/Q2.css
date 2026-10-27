@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.tooltip-container {
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.tooltip-item {
+    position: relative;
+}
+
+.tooltip-item button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Position the tooltip above its associated element. */
+.tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out,
+                visibility 0.3s ease-in-out;
+
+    pointer-events: none;
+}
+
+/* Fade the tooltip in on hover or keyboard focus. */
+.tooltip-item:hover .tooltip,
+.tooltip-item:focus-within .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip-item button:hover {
+    background: #1d4ed8;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .tooltip-container {
+        gap: 45px 20px;
+    }
+}

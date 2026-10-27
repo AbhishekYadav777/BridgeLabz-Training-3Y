@@ -1,0 +1,76 @@
+/* Keep the body sizing predictable while demonstrating both boxes. */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.comparison-card {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+    overflow-wrap: anywhere;
+}
+
+.comparison-card p {
+    line-height: 1.6;
+}
+
+/* Default content-box: width excludes padding and borders. */
+.content-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #1d4ed8;
+    background: #bfdbfe;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Border-box: width includes padding and borders. */
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #047857;
+    background: #a7f3d0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.explanation {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-left: 5px solid #7c3aed;
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .comparison-card {
+        width: 100%;
+    }
+}

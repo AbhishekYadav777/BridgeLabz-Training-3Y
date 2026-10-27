@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.animation-card {
+    width: 280px;
+    min-height: 220px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+    text-align: center;
+}
+
+/* Moving box animation. */
+.track {
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+.moving-box {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    background: #2563eb;
+    border-radius: 6px;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+/* Move the box across its track. */
+@keyframes moveBox {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 45px);
+    }
+}
+
+/* Bouncing ball animation. */
+.ball-track {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 3px solid #94a3b8;
+}
+
+.ball {
+    width: 35px;
+    height: 35px;
+    margin-top: 0;
+    background: #f97316;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite alternate;
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(75px);
+    }
+}
+
+/* Color-changing text animation. */
+.color-text {
+    font-size: 25px;
+    font-weight: bold;
+    animation: changeColor 3s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #2563eb;
+        transform: scale(1);
+    }
+    50% {
+        color: #9333ea;
+        transform: scale(1.08);
+    }
+    100% {
+        color: #dc2626;
+        transform: scale(1);
+    }
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .moving-box,
+    .ball,
+    .color-text {
+        animation: none;
+    }
+}

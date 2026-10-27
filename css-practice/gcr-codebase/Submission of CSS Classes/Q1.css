@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.example {
+    width: 240px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+    text-align: center;
+}
+
+/* :hover changes the link when the pointer moves over it. */
+.hover-link {
+    display: inline-block;
+    padding: 10px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: white;
+    background: #2563eb;
+    border-radius: 5px;
+}
+
+/* :focus highlights the button when it receives focus. */
+.focus-button {
+    padding: 10px 16px;
+    border: none;
+    background: #0d9488;
+    color: white;
+    cursor: pointer;
+}
+
+.focus-button:focus {
+    outline: 3px solid #99f6e4;
+    outline-offset: 3px;
+}
+
+/* :active applies while the button is pressed. */
+.active-button {
+    padding: 10px 16px;
+    border: none;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+}
+
+.active-button:active {
+    background: #4c1d95;
+    transform: scale(0.94);
+}
+
+/* :nth-child() selects list items by their position. */
+.numbered-list {
+    padding: 0;
+    list-style: none;
+}
+
+.numbered-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #e2e8f0;
+}
+
+.numbered-list li:nth-child(even) {
+    background: #bfdbfe;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .example {
+        width: 100%;
+    }
+}

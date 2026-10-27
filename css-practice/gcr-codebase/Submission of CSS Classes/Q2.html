@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltip Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Tooltip Demonstration</h1>
+        <p>Hover over each item to see its tooltip.</p>
+    </header>
+
+    <main class="tooltip-container">
+        <section class="tooltip-item">
+            <button type="button" aria-describedby="tip-home">🏠 Home</button>
+            <span class="tooltip" id="tip-home" role="tooltip">
+                Go to the home page
+            </span>
+        </section>
+
+        <section class="tooltip-item">
+            <button type="button" aria-describedby="tip-search">🔍 Search</button>
+            <span class="tooltip" id="tip-search" role="tooltip">
+                Search for information
+            </span>
+        </section>
+
+        <section class="tooltip-item">
+            <button type="button" aria-describedby="tip-profile">👤 Profile</button>
+            <span class="tooltip" id="tip-profile" role="tooltip">
+                View your profile
+            </span>
+        </section>
+
+        <section class="tooltip-item">
+            <button type="button" aria-describedby="tip-settings">⚙️ Settings</button>
+            <span class="tooltip" id="tip-settings" role="tooltip">
+                Manage your settings
+            </span>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built using HTML and CSS only.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box-Sizing Comparison</h1>
+        <p>Compare content-box and border-box.</p>
+    </header>
+
+    <main>
+        <section class="comparison">
+            <article class="comparison-card">
+                <h2>Content-Box</h2>
+                <div class="content-box">Content Box</div>
+                <p>
+                    The specified width applies to the content.
+                    Padding and borders increase the total width.
+                </p>
+                <p><strong>CSS width:</strong> 200px</p>
+            </article>
+
+            <article class="comparison-card">
+                <h2>Border-Box</h2>
+                <div class="border-box">Border Box</div>
+                <p>
+                    The specified width includes the content,
+                    padding, and border.
+                </p>
+                <p><strong>CSS width:</strong> 200px</p>
+            </article>
+        </section>
+
+        <section class="explanation">
+            <h2>Key Difference</h2>
+            <p>
+                With content-box, total width equals content width
+                plus left and right padding and borders.
+                With border-box, the total width remains the specified width.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Box Model Practical</p>
+    </footer>
+</body>
+</html>

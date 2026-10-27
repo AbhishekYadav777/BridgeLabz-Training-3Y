@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button-card {
+    min-width: 210px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.btn {
+    padding: 12px 22px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Primary button style. */
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+/* Secondary button style. */
+.secondary {
+    background: #475569;
+    color: white;
+}
+
+/* Outline button style. */
+.outline {
+    background: transparent;
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+/* Hover effects for enabled buttons. */
+.btn:not(:disabled):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px #00000020;
+}
+
+.primary:hover {
+    background: #1d4ed8;
+}
+
+.secondary:hover {
+    background: #334155;
+}
+
+.outline:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Active state when a button is pressed. */
+.btn:not(:disabled):active {
+    transform: scale(0.96);
+}
+
+/* Visible keyboard focus indicator. */
+.btn:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}
+
+/* Disabled state. */
+.btn:disabled {
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+footer {
+    margin-top: 20px;
+}
