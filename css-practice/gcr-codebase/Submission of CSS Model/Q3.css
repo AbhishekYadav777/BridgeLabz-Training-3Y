@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: #222;
+    z-index: 10;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+/* Linear gradient with fixed background attachment */
+.linear {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+    background: linear-gradient(135deg, #1565c0, #8e24aa);
+    background-attachment: fixed;
+}
+
+/* Radial gradient */
+.radial {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+    background: radial-gradient(circle, #ffca28, #e65100);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #222;
+}

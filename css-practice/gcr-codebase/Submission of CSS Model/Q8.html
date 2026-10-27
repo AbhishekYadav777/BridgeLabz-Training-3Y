@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="demo">
+            <div class="margin-layer">
+                <p>Margin</p>
+
+                <div class="border-layer">
+                    <p>Border</p>
+
+                    <div class="padding-layer">
+                        <p>Padding</p>
+
+                        <div class="content-layer">
+                            Content
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <div class="default-box">
+                <h3>Default Box</h3>
+                <p>Width: 200px</p>
+                <p>Padding and border increase the total width.</p>
+            </div>
+
+            <div class="border-box">
+                <h3>Border-box</h3>
+                <p>Width: 200px</p>
+                <p>Padding and border fit inside the set width.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

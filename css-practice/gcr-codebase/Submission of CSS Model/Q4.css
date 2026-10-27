@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px #999;
+}
+
+/* Flexbox arranges cards in one row */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    width: 260px;
+    min-height: 180px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Three different shadow styles */
+.shadow1 {
+    box-shadow: 4px 4px 10px #999;
+}
+
+.shadow2 {
+    box-shadow: 0 8px 20px #bbb;
+}
+
+.shadow3 {
+    box-shadow: 0 0 15px #90caf9;
+}
+
+/* Lift the cards on hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #888;
+}
+
+.card h2 {
+    color: #1565c0;
+    text-shadow: 1px 1px 2px #ccc;
+}

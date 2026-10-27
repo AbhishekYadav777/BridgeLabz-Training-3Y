@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+header {
+    padding: 15px;
+    background: #263238;
+    color: white;
+}
+
+/* Center the box model demonstration */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+}
+
+/* Margin is the outer spacing */
+.margin-layer {
+    background: #ffcc80;
+    margin: 20px;
+    padding: 15px;
+    outline: 2px dashed #e65100;
+}
+
+/* Border surrounds padding and content */
+.border-layer {
+    border: 8px solid #1565c0;
+    background: #bbdefb;
+    padding: 15px;
+}
+
+/* Padding is the space inside the border */
+.padding-layer {
+    background: #c8e6c9;
+    padding: 20px;
+    border: 2px dashed #2e7d32;
+}
+
+/* Content is the innermost area */
+.content-layer {
+    min-width: 150px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #333;
+}
+
+/* Compare the default content-box and border-box */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.default-box, .border-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #1565c0;
+    background: #e3f2fd;
+    overflow-wrap: anywhere;
+}
+
+/* Default box sizing: total width exceeds 200px */
+.default-box {
+    box-sizing: content-box;
+}
+
+/* Border-box includes padding and border in the width */
+.border-box {
+    box-sizing: border-box;
+}
