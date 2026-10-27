@@ -1,0 +1,18 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.summary-well {
+    border-color: #d8e0ea !important;
+}
+
+.alert {
+    border-radius: 10px;
+}

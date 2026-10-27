@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderly Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Travel Agency Showcase.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark travel-nav">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Wanderly Travel</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNav" aria-controls="travelNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="travelNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations" class="container py-5">
+            <div class="text-center mb-4">
+                <h1 class="display-5 fw-bold">Find Your Next Adventure</h1>
+                <p class="lead text-secondary">Handpicked destinations for unforgettable journeys.</p>
+            </div>
+
+            <!-- Bootstrap Carousel uses the bundled JS for slide controls and timing. -->
+            <div id="destinationCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Mountain valley">
+                        <div class="carousel-caption">
+                            <h2>Explore the Mountains</h2>
+                            <p>Fresh air, scenic trails, and peaceful views.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Tropical beach">
+                        <div class="carousel-caption">
+                            <h2>Relax by the Sea</h2>
+                            <p>Discover bright beaches and turquoise water.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Colorful coastal village">
+                        <div class="carousel-caption">
+                            <h2>Discover New Cultures</h2>
+                            <p>Wander through colorful streets and local markets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="booking" class="container py-4">
+            <div class="booking-panel p-4 rounded-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+                    <h2 class="h4 mb-0">Booking Completion</h2>
+                    <strong>70%</strong>
+                </div>
+
+                <!-- Animated Bootstrap progress bar -->
+                <div class="progress" role="progressbar" aria-label="Booking completion" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%">70%</div>
+                </div>
+
+                <p class="text-secondary small mt-2 mb-0">Your sample booking is 70% complete.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="text-center text-white py-4 travel-footer">
+        <p class="mb-1">Contact: hello@wanderly.example | +91 98765 43210</p>
+        <p class="mb-0">&copy; 2026 Wanderly Travel</p>
+    </footer>
+
+    <!-- Bootstrap bundle is required for carousel and responsive navbar. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

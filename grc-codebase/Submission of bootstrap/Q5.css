@@ -1,0 +1,83 @@
+
+/* Customize Bootstrap theme variables. */
+:root {
+    --bs-primary: #a34e35;
+    --bs-primary-rgb: 163, 78, 53;
+    --bs-font-sans-serif: 'DM Sans', sans-serif;
+    --brand: #a34e35;
+    --ink: #26352e;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background: #fbf8f3;
+}
+
+h1, h2, .brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.site-header {
+    border-bottom: 1px solid #e8dfd4;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--brand);
+}
+
+.intro {
+    max-width: 750px;
+}
+
+.eyebrow {
+    color: var(--brand);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+}
+
+.blog-card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+.btn-brand {
+    color: white;
+    background: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-brand:hover {
+    color: white;
+    background: #813b28;
+}
+
+footer {
+    background: #26352e;
+    color: white;
+}

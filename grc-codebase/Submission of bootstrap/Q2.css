@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #dbeafe;
+}
+
+.portfolio-card,
+.contact-card {
+    border: 1px solid #e5e7eb;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 576px) {
+    .portfolio-card {
+        padding: 2rem !important;
+    }
+}

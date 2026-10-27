@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7fafc;
+    color: #172033;
+}
+
+.travel-nav,
+.travel-footer {
+    background-color: #123047;
+}
+
+.carousel-item img {
+    height: min(62vw, 540px);
+    min-height: 300px;
+    object-fit: cover;
+    filter: brightness(0.78);
+}
+
+.carousel-caption {
+    bottom: 12%;
+    text-shadow: 0 2px 8px #000;
+}
+
+.carousel-caption h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+.booking-panel {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 575px) {
+    .carousel-item img {
+        min-height: 280px;
+    }
+
+    .carousel-caption {
+        bottom: 5%;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,70 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #212529;
+    margin: 0;
+}
+
+/* Hero section background */
+.hero-section {
+    background: linear-gradient(135deg, #f0f6ff, #ffffff);
+}
+
+/* Hero image */
+.hero-section img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+/* Service cards */
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover effect on service cards */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* About section */
+.about-section {
+    background-color: #f1f5f9;
+}
+
+.about-section p {
+    max-width: 750px;
+}
+
+/* Button hover effect */
+.btn {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+    .hero-section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .display-4 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section .btn {
+        margin-left: 0 !important;
+        margin-right: 0.25rem;
+    }
+}

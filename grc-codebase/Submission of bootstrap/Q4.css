@@ -1,0 +1,19 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf7;
+}
+
+.restaurant-header {
+    background: linear-gradient(135deg, #14532d, #4d7c0f);
+}
+
+figure img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.table {
+    background-color: white;
+}
