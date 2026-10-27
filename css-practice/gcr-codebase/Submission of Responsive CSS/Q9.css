@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.principle-card {
+    min-width: 0;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000010;
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.principle-card h2 {
+    color: #1d4ed8;
+}
+
+.principle-card p {
+    line-height: 1.7;
+}
+
+.principle-card pre {
+    max-width: 100%;
+    padding: 12px;
+    overflow-x: auto;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+.principle-card code {
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+/* Change the background and text color on hover. */
+.principle-card:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.principle-card:hover h2 {
+    color: white;
+}
+
+.principle-card:hover pre {
+    background: #ffffff20;
+    color: white;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+/* Single-column layout below 600px. */
+@media (max-width: 599px) {
+    .principles {
+        grid-template-columns: 1fr;
+    }
+}

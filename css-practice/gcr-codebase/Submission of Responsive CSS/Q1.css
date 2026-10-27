@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-item {
+    margin: 0;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.4s ease;
+}
+
+/* Apply a different filter to each image. */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(60%);
+}
+
+.contrast {
+    filter: contrast(200%);
+}
+
+.hue {
+    filter: hue-rotate(150deg);
+}
+
+/* Remove the filter on hover. */
+.gallery-item img:hover {
+    filter: none;
+}
+
+figcaption {
+    padding: 12px 5px 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+/* Stack all images in one column below 600px. */
+@media (max-width: 599px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

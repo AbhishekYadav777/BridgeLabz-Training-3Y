@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Summary</title>
+    <link rel="stylesheet" href="Responsive Dashboard Summary.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>CSS Learning Dashboard</h1>
+        <p>Responsive Design Practice</p>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h2>Topics</h2>
+
+            <nav>
+                <a href="#filters">Filters</a>
+                <a href="#typography">Typography</a>
+                <a href="#media-queries">Media Queries</a>
+                <a href="#cheat-sheet">Cheat Sheet</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2>Learning Summary</h2>
+
+            <section class="dashboard-cards">
+                <article class="dashboard-card" id="filters">
+                    <h3>Filters</h3>
+                    <p>Apply visual effects using the CSS filter property.</p>
+                    <code>filter: grayscale(100%);</code>
+                </article>
+
+                <article class="dashboard-card" id="typography">
+                    <h3>Typography</h3>
+                    <p>Use flexible font sizes for different devices.</p>
+                    <code>font-size: clamp(1rem, 2vw, 2rem);</code>
+                </article>
+
+                <article class="dashboard-card" id="media-queries">
+                    <h3>Media Queries</h3>
+                    <p>Adapt styles to different screen widths.</p>
+                    <code>@media (max-width: 750px)</code>
+                </article>
+
+                <article class="dashboard-card" id="cheat-sheet">
+                    <h3>Cheat Sheet Links</h3>
+                    <p>Keep useful CSS examples organized for quick reference.</p>
+                    <a href="Responsive CSS Cheat Sheet.html">View CSS Cheat Sheet</a>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CSS Learning Dashboard</p>
+    </footer>
+</body>
+</html>

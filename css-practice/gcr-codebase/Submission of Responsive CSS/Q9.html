@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="Responsive Design Principles Summary.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Principles</h1>
+        <p>Three important concepts for responsive websites.</p>
+    </header>
+
+    <main>
+        <section class="principles">
+            <article class="principle-card">
+                <h2>Fluid Layouts</h2>
+                <p>
+                    Fluid layouts use relative units so elements can
+                    adjust to available screen space.
+                </p>
+                <pre><code>.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}</code></pre>
+            </article>
+
+            <article class="principle-card">
+                <h2>Flexible Media</h2>
+                <p>
+                    Flexible images and videos resize within their
+                    containing elements.
+                </p>
+                <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+            </article>
+
+            <article class="principle-card">
+                <h2>Breakpoints</h2>
+                <p>
+                    Breakpoints allow styles to change when the
+                    viewport reaches a specific width.
+                </p>
+                <pre><code>@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}</code></pre>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Responsive Design Principles | CSS Practical</p>
+    </footer>
+</body>
+</html>

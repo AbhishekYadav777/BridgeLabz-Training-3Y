@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: #1d4ed8;
+    color: white;
+}
+
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.content h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+.content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Improve text spacing on smaller screens. */
+@media (max-width: 700px) {
+    .content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+}
